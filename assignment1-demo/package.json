@@ -7,7 +7,7 @@
     "build": "npx @11ty/eleventy",
     "dev": "npx @11ty/eleventy --serve"
   },
-  "author": "malsini masachchige",
+  "author": "malsini masachchige - 100854161",
   "license": "ISC",
   "description": "",
   "dependencies": {
