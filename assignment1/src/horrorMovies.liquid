@@ -1,0 +1,29 @@
+---
+layout: layouts/default.liquid
+pagination:
+  data: horror
+  size: 1
+  alias: horror
+title: Horror movie facts
+---
+<div class="d-flex justify-content-center">
+  <h1>{{title}}</h1>
+</div>
+
+<hr>
+{% for horror in pagination.items %}
+  <div class="d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+      <img src="/public/img/{{ horror.image }}" class="card-img-top" alt="{{ horror.name }}">
+      <div class="card-body">
+        <h3>{{ horror.name }}</h3>
+        <p>{{ horror.fact }}</p>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+<hr>
+<div class="d-flex justify-content-center">
+  {% include 'partials/pagination.liquid' %}
+</div>

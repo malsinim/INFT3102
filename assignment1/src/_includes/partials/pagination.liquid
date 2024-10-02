@@ -1,0 +1,22 @@
+{% comment %} pagination for horrorMovies.liquid {% endcomment %}
+<nav aria-label="HorrorMovie Facts page navigation">
+    <ul class="pagination">
+        {% comment %} pagination referenced from: https://www.11ty.dev/docs/pagination/nav/ {% endcomment %}
+        <li class ="page-item">{% if pagination.href.previous %}
+            <a class ="page-link" href="{{ pagination.href.previous }}">Previous</a>
+            {% else %}Previous{% endif %}
+        </li>
+        {%- for pageEntry in pagination.pages %}
+            
+            <li class="page-item">  
+                <a class="page-link " href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page" {% endif %}>Page {{ forloop.index }}</a></li>     
+            </li>
+        {%- endfor %}
+        
+        <li class ="page-item">
+            {% if pagination.href.next %}
+            <a class ="page-link" href="{{ pagination.href.next }}">Next</a>
+            {% else %}Next{% endif %}
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,8 @@
+.mal{
+    background-color: rgb(96, 96, 154);
+    color: white;
+}
+
+[aria-current] {
+	background-color: #eee;
+}

@@ -1,0 +1,12 @@
+{% comment %} Footer {% endcomment %}
+<div class="d-flex justify-content-center">
+    <div class="bg-dark-subtle">
+        {% comment %} Element to show year and name {% endcomment %}
+        <p>&copy; <span id="year"></span> Malsini Masachchige.</p>
+    </div>
+</div>
+{% comment %} JavaScript to get the current year {% endcomment %}
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
