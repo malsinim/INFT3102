@@ -1,0 +1,10 @@
+---
+layout: layout.html
+---
+<h1>Sections</h1>
+<ul>
+  {% for section in collections.sections %}
+    <li><a href="/sections/{{ section.section | slug }}/">{{ section.section }}</a></li>
+  {% endfor %}
+</ul>
+

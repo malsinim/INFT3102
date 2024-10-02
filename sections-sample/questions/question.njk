@@ -1,0 +1,12 @@
+---
+pagination:
+  data: questions
+  size: 1
+  alias: question
+permalink: "/questions/{{ question.title | slug }}/"
+tags: question
+layout: layout.html
+---
+<h1>{{ question.title }}</h1>
+<p>{{ question.question }}</p>
+<a href="/sections/{{ question.section | slug }}/">Back</a>
