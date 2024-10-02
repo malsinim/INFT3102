@@ -4,7 +4,7 @@ pagination:
   data: horror
   size: 1
   alias: horror
-title: Horror movie facts
+title: Horror Movie Facts
 ---
 <div class="d-flex justify-content-center">
   <h1>{{title}}</h1>
@@ -12,10 +12,14 @@ title: Horror movie facts
 
 <hr>
 {% for horror in pagination.items %}
+  {% comment %} referenced previous Class Work on animals and card html derived from bootstrap {% endcomment %}
   <div class="d-flex justify-content-center">
     <div class="card" style="width: 18rem;">
+      {% comment %} get image for each of the horror movies from img folder {% endcomment %}
+      {% comment %} get image of horror movie from the json file {% endcomment %}
       <img src="/public/img/{{ horror.image }}" class="card-img-top" alt="{{ horror.name }}">
       <div class="card-body">
+        {% comment %} get the name and fact of each horror movie {% endcomment %}
         <h3>{{ horror.name }}</h3>
         <p>{{ horror.fact }}</p>
       </div>
@@ -24,6 +28,7 @@ title: Horror movie facts
 {% endfor %}
 
 <hr>
+{% comment %} include the pagination {% endcomment %}
 <div class="d-flex justify-content-center">
   {% include 'partials/pagination.liquid' %}
 </div>
