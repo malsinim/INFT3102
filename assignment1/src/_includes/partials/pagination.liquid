@@ -8,8 +8,8 @@
         </li>
         {%- for pageEntry in pagination.pages %}
             
-            <li class="page-item">  
-                <a class="page-link " href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page" {% endif %}>Page {{ forloop.index }}</a></li>     
+            <li class="page-item {% if page.url == pagination.hrefs[ forloop.index0 ] %} active {% endif %}">  
+                <a class="page-link " href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} {% endif %}>Page {{ forloop.index }}</a></li>     
             </li>
         {%- endfor %}
         

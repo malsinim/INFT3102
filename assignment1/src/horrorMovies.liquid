@@ -14,7 +14,7 @@ title: Horror Movie Facts
 {% for horror in pagination.items %}
   {% comment %} referenced previous Class Work on animals and card html derived from bootstrap {% endcomment %}
   <div class="d-flex justify-content-center">
-    <div class="card" style="width: 18rem;">
+    <div class="card; mal" style="width: 18rem;">
       {% comment %} get image for each of the horror movies from img folder {% endcomment %}
       {% comment %} get image of horror movie from the json file {% endcomment %}
       <img src="/public/img/{{ horror.image }}" class="card-img-top" alt="{{ horror.name }}">

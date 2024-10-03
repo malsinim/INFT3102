@@ -1,8 +1,11 @@
-.mal{
-    background-color: rgb(96, 96, 154);
+ .mal{ 
+    background-color: #212529;
     color: white;
 }
 
-[aria-current] {
-	background-color: #eee;
-}
+.bg-dark-subtle2 {
+    background-image: url('/public/img/bg.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
