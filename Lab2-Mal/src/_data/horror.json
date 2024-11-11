@@ -1,0 +1,56 @@
+[
+    {
+      "name": "As Above, So Below",
+      "fact": "Filmed in the real catacombs beneath Paris, the filmmakers had to acquire special permission to shoot in the restricted areas.",
+      "image": "as-above-so-below.jpg"
+    },
+    {
+      "name": "The Autopsy of Jane Doe",
+      "fact": "The role of the corpse, 'Jane Doe,' was played mostly by actress Olwen Kelly to make the autopsy scenes more realistic.",
+      "image": "autopsy-of-jane-doe.jpg"
+    },
+    {
+      "name": "Drag Me to Hell",
+      "fact": "Director Sam Raimi returned to his horror roots after making the Spider-Man trilogy with this film, full of his signature dark humor.",
+      "image": "drag-me-to-hell.jpg"
+    },
+    {
+      "name": "Evil Dead",
+      "fact": "The infamous 'cabin in the woods' was an actual abandoned cabin that the filmmakers renovated just enough to shoot the movie.",
+      "image": "evil-dead.jpg"
+    },
+    {
+        "name": "Hereditary",
+        "fact": "Hereditary is often considered one of the scariest films of all time due to its intense psychological horror and shocking moments.",
+        "image": "hereditary.png"
+    },
+    {
+        "name": "Get Out",
+        "fact": "Get Out became a cultural phenomenon, blending social commentary with horror and earning Jordan Peele an Academy Award for Best Original Screenplay.",
+        "image": "get-out.jpg"
+    },
+    {
+        "name": "The Conjuring",
+        "fact": "The Conjuring is based on the real-life investigations of paranormal investigators Ed and Lorraine Warren, who claimed to have dealt with real hauntings.",
+        "image": "the-conjuring.jpg"
+    },
+    {
+        "name": "A Quiet Place",
+        "fact": "A Quiet Place features minimal dialogue, with the characters communicating primarily through sign language, creating a tense and immersive experience.",
+        "image": "a-quiet-place.jpg"
+    },
+    {
+        "name": "It Follows",
+        "fact": "It Follows received acclaim for its unique premise, in which a supernatural entity relentlessly stalks its victims, creating a sense of paranoia.",
+        "image": "it-follows.jpg"
+    },
+    {
+        "name": "The Babadook",
+        "fact": "The Babadook is often interpreted as an allegory for grief and mental illness, utilizing horror elements to explore emotional struggles.",
+        "image": "the-babadook.jpg"
+    }
+]
+    
+
+
+  

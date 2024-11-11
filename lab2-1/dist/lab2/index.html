@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 2</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href ="public/css/index.css" rel="stylesheet" >
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " href="/index">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/README">README</a>
+            </li>
+
+          
+
+            <li class="nav-item">
+              <a class="nav-link" href="/lab2">Lab 2</a>
+            </li>
+
+          
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+ 
+     <h2>Lab 2: Technology Choices for Headless CMS Implementation</h2>
+<h3>Objective</h3>
+<p>The objective for this lab is to research 5 headless CMS systems, namely, Strapi, Contentful, Sanity, Prismic, and Ghost to determine which CMS works best to create and maintain a website.</p>
+<h3>Headless CMS Research and Comparison</h3>
+<h3>Strapi</h3>
+<ul>
+<li><strong>Overview</strong>: Strapi is an open-source, self-hosted headless CMS built with Node.js, offering extensive control over the backend.</li>
+<li><strong>Features</strong>: REST and GraphQL API support, customizable content types, granular role-based access, and a plugin ecosystem.</li>
+<li><strong>Advantages</strong>: High level of customization, flexibility, open-source with strong community support, and robust content management capabilities.</li>
+<li><strong>Disadvantages</strong>: Requires more initial setup and familiarity with backend configuration compared to other options.</li>
+<li><strong>Use Case Fit</strong>: Strapi is ideal for projects that require a high degree of API customization and backend control.</li>
+</ul>
+<h3>Contentful</h3>
+<ul>
+<li><strong>Overview</strong>: Contentful is a cloud-based CMS focused on multi-channel content delivery and scalability.</li>
+<li><strong>Features</strong>: Content model customization, multi-language support, REST and GraphQL APIs, and integration capabilities.</li>
+<li><strong>Advantages</strong>: Scalable, powerful APIs, user-friendly interface for non-technical users.</li>
+<li><strong>Disadvantages</strong>: Can become costly as the project scales.</li>
+<li><strong>Use Case Fit</strong>: Suitable for large-scale applications where content delivery across platforms is a priority.</li>
+</ul>
+<h3>Sanity</h3>
+<ul>
+<li><strong>Overview</strong>: Sanity is known for flexibility, real-time collaboration, and its custom query language, GROQ.</li>
+<li><strong>Features</strong>: Real-time content updates, customizable studio, and version control.</li>
+<li><strong>Advantages</strong>: Real-time collaboration, structured content model, flexible editing environment.</li>
+<li><strong>Disadvantages</strong>: Requires some learning curve due to GROQ and its customization.</li>
+<li><strong>Use Case Fit</strong>: Ideal for collaborative environments needing frequent content updates.</li>
+</ul>
+<h3>Prismic</h3>
+<ul>
+<li><strong>Overview</strong>: Prismic is a CMS emphasizing ease of use with a component-based content model.</li>
+<li><strong>Features</strong>: Slice Machine for reusable components, visual editor, and REST API support.</li>
+<li><strong>Advantages</strong>: User-friendly, efficient for marketers and content creators.</li>
+<li><strong>Disadvantages</strong>: Limited customization for backend integrations.</li>
+<li><strong>Use Case Fit</strong>: Best for marketing and content-centric projects.</li>
+</ul>
+<h3>Ghost</h3>
+<ul>
+<li><strong>Overview</strong>: Ghost is a CMS focused on content-rich websites, such as blogs and news sites.</li>
+<li><strong>Features</strong>: Markdown support, built-in SEO tools, and membership options.</li>
+<li><strong>Advantages</strong>: Optimized for blogging, with monetization and SEO features.</li>
+<li><strong>Disadvantages</strong>: Less suitable for projects needing complex API configurations.</li>
+<li><strong>Use Case Fit</strong>: Ideal for blog-focused or content marketing sites.</li>
+</ul>
+<h2>Justification for Final CMS Choice: Strapi</h2>
+<p>After reviewing each CMS in light of the project’s requirements, <strong>Strapi</strong> was chosen as the final CMS for implementation. The project requires high flexibility in API customization, user roles, and backend control—areas where Strapi excels. Being open-source, Strapi provides complete control over the content and API structure, aligning well with the technical needs and future scalability of the project.</p>
+<ul>
+<li><strong>Alignment with Project Requirements</strong>: Strapi allows for tailored API configurations and data models, making it suitable for the project’s specific content management needs.</li>
+<li><strong>Customization and Control</strong>: Strapi’s extensive customization capabilities are particularly valuable for managing unique content types, roles, and permissions.</li>
+<li><strong>Community and Support</strong>: As an open-source CMS with strong community support, Strapi offers a wealth of resources for troubleshooting and enhancement.</li>
+</ul>
+<h3>Final Implementation</h3>
+<p>Based on the experimentation phase, Strapi will be implemented in the final version of the project site, leveraging its customizable API, content management, and user roles. These features provide the necessary foundation for a flexible and scalable content management solution.</p>
+<hr>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

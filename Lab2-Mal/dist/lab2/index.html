@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 2</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href ="/public/css/index.css" rel="stylesheet">
+  </head>
+  <div class="bg-dark-subtle2" >
+    <body class = "mal">
+      
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="/index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/README">README</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/1_assignment">Assignment 1 Instructions</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link " href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/horrorMovies">Horror Movie Facts</a>
+              </li>
+            
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+</nav>
+
+      <div class="container my-5">
+
+        <h2>Lab 2: Technology Choices for Headless CMS Implementation</h2>
+<hr>
+<h3>Objective</h3>
+<p>The objective for this lab is to research 5 headless CMS systems, namely, Strapi, Contentful, Sanity, Prismic, and Ghost to determine which CMS works best to create and maintain a website.</p>
+<hr>
+<h3>What is a headless CMS?</h3>
+<p>A headless CMS, is a content management system that provides user-friendly frontend environment for creating and managing content.</p>
+<p>Headless CMS's separate the content's front end from its backend, and makes content accessible via an API so that content can be displayed on any device.</p>
+<hr>
+<h3>Strapi</h3>
+<h4>Overview:</h4>
+<ul>
+<li>Strapi is a headless CMS that can be used to build websites, mobile apps. eCommerece platforms and APIs.</li>
+<li>Strapi is a free open-source headless CMS that connects a website's front end and back end using an API.</li>
+</ul>
+<h4>Features</h4>
+<ul>
+<li>Compatible with databases such as MongoDB, PostgreSQL, and many others.</li>
+<li>Websites powered by Strapi is designed to scale automatically to handle heavy traffic.</li>
+</ul>
+<h4>Pros</h4>
+<ol>
+<li><strong>Easy to use and versatile</strong>: Strapi is super easy to use because it's extremely user-friendly. That's not all, Strapi is highly
+customizable with through plugins, while also allowing you to create content without the need for coding.</li>
+<li><strong>Open-Source and free</strong>: Strapi is available for free.</li>
+<li><strong>Scalable</strong> : Strapi is able to quickly scale up to manage heav traffic loads in your webiste.</li>
+<li><strong>Reduces development time</strong>: Strapi features an admin section with a user friendly UI for content management which greatly reduces development time.</li>
+<li><strong>Accesible plugins</strong>: Strapi provides many plugins that can enchance an existing or new application.</li>
+</ol>
+<h4>Cons:</h4>
+<ol>
+<li><strong>Limited TypeScript support</strong>: Strapi does not natively support TypeScript. But TypeScript can be used by using a plugin from the npm repositories.</li>
+<li><strong>Constant updates</strong>: Strapi has constant updates so it is important to be mindful of the changes.</li>
+<li><strong>Is not entirely free</strong>: Strapi offers a paid version to its users with extra features.</li>
+<li><strong>Manual migration</strong>: The platform does not support automating content migrations.</li>
+</ol>
+<h4>Conclusion:</h4>
+<p>Strapi is a headless CMS which is a great tool for building APIs.</p>
+<hr>
+<h3>Contentful</h3>
+<h4>Overview:</h4>
+<ul>
+<li>Contentful is a composable content platform which means that with it, you can create, managem distribute content to many platforms (websites. mobile apps, and IoT devices).</li>
+</ul>
+<h4>Features</h4>
+<ul>
+<li>Has a starter template which is a pre-built set of files and directory structures that act as a basic starter point for new projects.</li>
+<li>Offers powerful localozation features.</li>
+<li>Webhooks in Contentful notifies you about events in your space, like when an entry is published, updated or deleted.</li>
+<li>Contenful CLI is a tool that can be used to manage Contenful spaces, content models, data, and other functionalities without the need to use their web interface.</li>
+</ul>
+<h4>Pros</h4>
+<ol>
+<li><strong>Extendable interface</strong>: Conteful's interface can be customizable through extensions, which make it developer friendly.</li>
+<li><strong>Structured content model</strong>: Developers are able to define content types that match their specific project needs.</li>
+<li><strong>Media management</strong>: Contentful supports integrations with Bynder, Cloudinary, and Dropbox to handle images, videos and other media types.</li>
+<li><strong>Migration tools</strong>: The platform provides APIs and CLI tools to automate content migrations.</li>
+</ol>
+<h4>Cons:</h4>
+<ol>
+<li><strong>Limitations with API</strong>: Contentful GraphQL API does not suuport deep nested queries, which makes it hard to retrieve data.</li>
+<li><strong>API rate limits</strong>: Affects performance for high traffic applications.</li>
+<li><strong>Data import challenges</strong>: Writing queries to filter large datasets can be challenging.</li>
+</ol>
+<h4>Conclusion:</h4>
+<p>A typical use case for Contentful is managing content for an e-commerece site.</p>
+<hr>
+<h3>Ghost</h3>
+<h4>Overview:</h4>
+<ul>
+<li>Ghost refers to themselves as &quot;The Creator Economy Platform&quot;. It is an open source headless CMS built on Node.js.</li>
+</ul>
+<h4>Features</h4>
+<ul>
+<li>There is a Custom Redirects feature in Ghost CMS, which allows you to manage custom 301, and 302 redirects, to redirect old urls to new locations due to updates in your content structure.</li>
+<li>With Ghost, you can create content in markdown format.</li>
+<li>Ghost has a CLI to manage installations.</li>
+</ul>
+<h4>Pros</h4>
+<ol>
+<li><strong>SQLite and MySQL support</strong>: Ghost offers support for both SQLite and MySQL databases.</li>
+<li><strong>Markdown support</strong> Ghost uses markdown for content creation, which makes writing content much easier.</li>
+<li><strong>Bloat free</strong>: Ghost provides only whats neccessary to your project. Which leads to better performance, cleaner code.</li>
+<li><strong>Built in SEO tools</strong>: Ghost provides built in SEO features such as clean HTML markup, XML site maps, and canonical tags to make SEO optimization easy.</li>
+</ol>
+<h4>Cons:</h4>
+<ol>
+<li><strong>Limited website functionality</strong>: Ghost is designed for blogging and is not suited to build complex, dynamic layouts.</li>
+<li><strong>Limited multi-language support</strong>: Ghost does not directly support the creation of multilingual content and you would have to rely on third part integrations.</li>
+</ol>
+<h4>Conclusion:</h4>
+<p>A common use case for Ghost is running blogs.</p>
+<hr>
+<h3>Sanity</h3>
+<h4>Overview:</h4>
+<ul>
+<li>Sanity provides developers with tools they need to create and manage their websites or applications. Sanity's flexibilty and its various features make content creation and management more efficient.</li>
+</ul>
+<h4>Features</h4>
+<ul>
+<li>Sanity Studio is the open-source and real time collaborative editing environment that Sanity provides for content creation and management.</li>
+<li>Supports queries from a CDN using GraphQL, webhooks.</li>
+<li>Provides document version control.</li>
+<li>Is API driven.</li>
+<li>Has an image processor to upload and edit images.</li>
+<li>Custom integrations with third part services such as OAuth providers are also supported.</li>
+</ul>
+<h4>Advantages</h4>
+<ol>
+<li><strong>Fast loading experince</strong>: Sanity delivers content for a smooth experience.</li>
+<li><strong>Easy to use editing interface</strong>: The editor for content creation and management is easy to use.</li>
+<li><strong>Seamless video support</strong>: Sanity provides seamless video integration across devices.</li>
+<li><strong>Scalable</strong>: Scalable to meet the needs of your website/applications.</li>
+<li><strong>Supportive community</strong>: Sanity has a friendly and supportive community.</li>
+</ol>
+<h4>Disadvantages:</h4>
+<ol>
+<li><strong>Time-consuming Development</strong>: Sanity's takes longer compared to some alternatives.</li>
+<li><strong>Relies heavily on manual input</strong>: Requires more manual setup than automated options.</li>
+<li><strong>Higher maintenance needs</strong>: Sanity requires more maintenance.</li>
+<li><strong>Limited built-in editing tools</strong>: Lacks some intuitive, user-friendly editing features.</li>
+<li><strong>Expensive for large data</strong>: It can be costly to manage large sets of data.</li>
+</ol>
+<h4>Conclusion:</h4>
+<p>Sanity CMS is flexible and customizable when it comes to content creation and maintains strong performance.</p>
+<hr>
+<h3>Prismic</h3>
+<h4>Overview:</h4>
+<ul>
+<li>Prismic is a CMS that allows developers to create and manage content via an intuitive user interface. Primismic is API driven, meaning that it allows you to deliver your content through an API to any device or platform.</li>
+</ul>
+<h4>Features</h4>
+<ul>
+<li>Provides a user friendly interface for creating and managing content.</li>
+<li>Has a great text editor to format your text without the need to write HTML code.</li>
+<li>Images are optimized to deliver to any device.</li>
+</ul>
+<h4>Advantages</h4>
+<ol>
+<li><strong>User friendly</strong>: Prismic provides a flexible, user friendly and fast way to manage content.</li>
+<li><strong>Content versioning, live previews and managebale scheduling</strong>.</li>
+<li><strong>Simple integration</strong>: Easy integrations for third party services.</li>
+<li><strong>Documentation</strong>: Well written documentation.</li>
+<li><strong>Hosted in the cloud</strong>: No need to maintain infrastuctre.</li>
+<li><strong>Reusable components</strong>: Prismic has a feature knowns as &quot;Slices&quot; that allows resuable coding components for page builders.</li>
+</ol>
+<h4>Disadvantages:</h4>
+<ol>
+<li><strong>Costly</strong>: While Prismic does have a free tier, this has limited features and storage, therefore, paid plans can be costly depending on the size of your website and the traffic it gets.</li>
+<li><strong>No support for customzing and extending its features.</strong></li>
+</ol>
+<h4>Conclusion:</h4>
+<p>Prismic is a good headless CMS that does hosting, image optimization, has reusable slices, provides customer support, making Prismic an efficient and reliable platform for building websites.</p>
+<hr>
+<h3>Strapi Implementation</h3>
+<hr>
+<h3>Prismic Implementation</h3>
+<hr>
+
+
+      </div>
+    
+      
+<div class="d-flex justify-content-center">
+    <div class="mal">
+        
+        <p>&copy; <span id="year"></span> Malsini Masachchige.</p>
+       
+        <a class ="nav-link"href="/terms-and-conditions">Terms and Conditions</a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      
+    </body>
+  </div>
+</html>
