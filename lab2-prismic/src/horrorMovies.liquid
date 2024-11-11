@@ -1,0 +1,32 @@
+---
+layout: layouts/default.liquid
+pagination:
+  data: movies 
+  size: 1
+  alias: horror
+title: Horror Movie Facts
+---
+
+<div class="d-flex justify-content-center">
+  <h1>{{ title }}</h1>
+</div>
+
+<hr>
+
+{% for horror in pagination.items %}
+  <div class="d-flex justify-content-center">
+    <div class="card mal" style="width: 18rem;">
+      <img src="{{ horror.data.image.url }}" class="card-img-top" alt="{{ horror.data.name }}">
+      <div class="card-body">
+         {% comment %} added index to get the data as text, as it is in an array {% endcomment %}
+        <h3>{{ horror.data.name[0].text }}</h3>
+        <p>{{ horror.data.description[0].text }}</p>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+<hr>
+<div class="d-flex justify-content-center">
+  {% include 'partials/pagination.liquid' %}
+</div>
